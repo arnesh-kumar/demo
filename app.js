@@ -17,7 +17,6 @@ app.get('/', function(req, res) {
     }else if(time < '12:00:00') {
         greeting = "morning";
     }
-    console.log(time);
     if (!requestName){
         res.send('Hello, user, Good ' + greeting );
     }else {
